@@ -30,8 +30,7 @@ small {
   height: 440px;
   width: 300px;
   background: url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60")
-    no-repeat center center/cover;
-
+    no-repeat center/cover;
   margin: auto;
   cursor: pointer;
   max-width: 100%;
@@ -42,6 +41,12 @@ small {
 .loveMe .fa-heart {
   position: absolute;
   animation: grow 0.6s linear;
-  transform: translate(-50%, -50%) scale(10);
-  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
 }
